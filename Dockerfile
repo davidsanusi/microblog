@@ -13,7 +13,7 @@ ADD . /app
 
 # Install the dependencies
 RUN pip install -r requirements.txt
-USER nginx
+# USER nginx
 
 # Expose port 8000
 EXPOSE 8000
