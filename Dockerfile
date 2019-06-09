@@ -1,5 +1,7 @@
 # Use the Python3.7.2 image
-FROM nginx-uwsgi-alpine3.9 # Push this image to our repo for subsequent builds
+FROM docker.io/davidsanusi/nginx-uwsgi-alpine3.9 
+
+# Push this image to our repo for subsequent builds
 
 RUN adduser -D microblog
 
