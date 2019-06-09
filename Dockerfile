@@ -3,7 +3,7 @@ FROM docker.io/davidsanusi/nginx-uwsgi-alpine3.9
 
 # Push this image to our repo for subsequent builds
 
-RUN adduser -D microblog
+# RUN adduser -D microblog
 
 # Set the working directory to /app
 WORKDIR /app
@@ -13,7 +13,7 @@ ADD . /app
 
 # Install the dependencies
 RUN pip install -r requirements.txt
-USER microblog
+USER nginx
 
 # Expose port 8000
 EXPOSE 8000
