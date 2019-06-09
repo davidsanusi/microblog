@@ -15,8 +15,8 @@ ADD . /app
 RUN pip install -r requirements.txt
 # USER nginx
 
-# Expose port 8000
-EXPOSE 8000
+# Expose port 80
+EXPOSE 80
 
 # run the command to start uWSGI
 
