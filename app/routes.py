@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+import socket
 
 @app.route('/')
 @app.route('/index')
@@ -23,4 +24,5 @@ def index():
 
 @app.route("/login")
 def login():
-    return "Login here!"
+    # return "Login here!"
+    return "Login to this host: " + socket.gethostname()
