@@ -35,4 +35,4 @@ def login():
 @app.route("/host")
 def hosty():
     # return "Login here!"
-    return "Login to this host: " + socket.gethostname()
+    return "Login to this V2 host: " + socket.gethostname()
